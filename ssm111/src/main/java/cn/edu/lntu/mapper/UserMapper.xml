@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.lntu.mapper.UserMapper">
+  <select id="getUser" resultType="cn.edu.lntu.domain.User">
+  	select * from user where no=#{no}
+  </select>
+  <select id="getUsers" resultType="cn.edu.lntu.domain.User">
+  	select * from user
+  </select>
+</mapper>
